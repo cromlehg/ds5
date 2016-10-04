@@ -3,6 +3,8 @@ package ru.ds.ds5server;
 public class DietSolver {
 
 	Food[] foods;
+	int p, f, c;
+	int weight;
 
 	public DietSolver() {
 
@@ -14,9 +16,13 @@ public class DietSolver {
 
 	// metod poiska edu
 	public Diet solveDiet(Human human) {
-		
-		
-		return new Diet(foods);
-	}
+		int i = 0;
+		while (i < 100 && p < weight * 2) {
+			p = foods[i].getProtein();
+			i++;
 
+			return Diet;
+		}
+
+	}
 }
