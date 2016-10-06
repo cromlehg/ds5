@@ -25,4 +25,12 @@ public class Food {
 	public int getCarbo() {
 		return carbo;
 	}
+	
+	public String getName() {
+		return name;
+	}
+	
+	public String toString() {
+		
+	}
 }
