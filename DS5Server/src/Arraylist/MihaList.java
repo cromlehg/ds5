@@ -12,7 +12,7 @@ public class MihaList {
 			for(int i=0; i < list.length; i++) {
 				listnew[i]=list[i];
 			}
-	
+	    list = listnew;
 		}
 		list[size] = addEL;
 		size++;
