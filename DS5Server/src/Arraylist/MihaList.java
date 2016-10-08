@@ -19,8 +19,8 @@ public class MihaList {
 		}
 	}
 
-	public int get(int element, int number) {
-		return element = list[number];
+	public int get(int number) {
+		return list[number];
 	}
 
 	public int getSize() {
