@@ -4,13 +4,18 @@ public class RunnerMihaList {
 
 	public static void main(String args[]) {
 		
-	
-		
-		
-	int addEll = 4;
+
 	MihaList list = new MihaList();
 	
+	int addEL=5;
 	
-	spisok.add(mihaList, 3);
+	list.add(addEL);
+	
+	list.add(addEL);
+	
+	list.clean();
+		
+	System.out.println(list.getSize());
+	
 	}
 }

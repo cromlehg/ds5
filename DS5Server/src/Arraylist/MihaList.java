@@ -7,19 +7,16 @@ public class MihaList {
 	int size = 0;
 
 	public void add(int addEL) {
-		if(size > list.length) {
-			Object[] listnew = new Object[size+1];
-			for(int i=0; i < list.length; i++) {
-				listnew[i]=list[i];
+		if (size > list.length) {
+			Object[] listnew = new Object[size + 1];
+			for (int i = 0; i < list.length; i++) {
+				listnew[i] = list[i];
 			}
-	    list = listnew;
+			list = listnew;
 		}
 		list[size] = addEL;
 		size++;
-	
-	
-	
-	
+
 	}
 
 	public Object get(int number) {
