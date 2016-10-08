@@ -4,10 +4,13 @@ public class RunnerMihaList {
 
 	public static void main(String args[]) {
 		
+	
+		
 		
 	int addEll = 4;
-	MihaList spisok = new MihaList(  );
+	MihaList list = new MihaList();
 	
-	spisok.Add(mihaList, 3);
+	
+	spisok.add(mihaList, 3);
 	}
 }
