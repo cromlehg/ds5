@@ -3,9 +3,7 @@ package Arraylist;
 public class MihaList {
 
 	int[] list;
-	int number;
-	int addEl;
-	int element;
+	
 
 	// public MihaList() {
 	// this.mihaList = mihaList;
@@ -13,15 +11,15 @@ public class MihaList {
 	// this.addEl = addEl;
 	// }
 
-	public void add() {
+	public void add(int addEL, int number) {
 
 		for (int i = number; i <= list.length; i++) {
-			list[number] = list[addEl];
+			list[number] = list[addEL];
 			list[i] = list[i + 1];
 		}
 	}
 
-	public int get() {
+	public int get(int element, int number) {
 		return element = list[number];
 	}
 
@@ -39,7 +37,7 @@ public class MihaList {
 		}
 	}
 
-	public void remove() {
+	public void remove(int number) {
 		for (int i = number; i <= list.length; i++) {
 			list[number] = list[number+1];
 			list[i+1] = list[i];
