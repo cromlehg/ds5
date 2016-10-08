@@ -11,12 +11,10 @@ public class MihaList {
 	// this.addEl = addEl;
 	// }
 
-	public void add(int addEL, int number) {
-
-		for (int i = number; i <= list.length; i++) {
-			list[number] = list[addEL];
-			list[i] = list[i + 1];
-		}
+	public void add(int addEL) {
+        int i = list.length;
+        list[i+1] = addEL;
+        	
 	}
 
 	public int get(int number) {
