@@ -27,9 +27,9 @@ public class MihaList {
 	}
 
 	public void remove(int number) {
-		for (int i = number; i <= size; i++) {
-			list[number] = list[number + 1];
-			list[i + 1] = list[i];
+		for (int i = number-1; i < size; i++) {
+			list[i] = list[i+1];
+			
 		}
 	}
 }
