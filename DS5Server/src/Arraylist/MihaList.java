@@ -2,43 +2,34 @@ package Arraylist;
 
 public class MihaList {
 
-	int[] list;
+	Object[] list = new Object[10];
+
+	int size = 0;
 	
-
-	// public MihaList() {
-	// this.mihaList = mihaList;
-	// this.number = number;
-	// this.addEl = addEl;
-	// }
-
+	
 	public void add(int addEL) {
-        int i = list.length;
-        list[i+1] = addEL;
-        	
+		list[size] = addEL;
+		size++;
 	}
 
-	public int get(int number) {
+	public Object get(int number) {
 		return list[number];
 	}
 
 	public int getSize() {
-		int i = 0;
-		while (list[0] != 0) {
-			i = 0;
-		}
-		return i;
+		return size;
 	}
 
 	public void clean() {
-		for (int i = 0; i < list.length; i++) {
+		for (int i = 0; i < size; i++) {
 			list[i] = 0;
 		}
 	}
 
 	public void remove(int number) {
-		for (int i = number; i <= list.length; i++) {
-			list[number] = list[number+1];
-			list[i+1] = list[i];
+		for (int i = number; i <= size; i++) {
+			list[number] = list[number + 1];
+			list[i + 1] = list[i];
 		}
 	}
 }
